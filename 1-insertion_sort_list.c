@@ -10,6 +10,8 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *cap, *sort;
 
+	if (list == NULL || *list == NULL)
+		return;
 	cap = (*list)->next;
 	sort = cap;
 	while (cap != NULL)
